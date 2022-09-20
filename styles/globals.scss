@@ -1,0 +1,88 @@
+/* ./styles/globals.css */
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+main {
+  .header {
+    h1 {
+      margin-right: 20px;
+      span {
+        display: block;
+        height: 24px;
+        width: 24px;
+        background-color: white;
+        border-radius: 50%;
+        margin: 50px 25px 0 50px;
+      }
+    }
+  }
+  .blank-space {
+    .dot {
+      height: 18px;
+      width: 18px;
+      margin-left: 350px;
+      margin-top: 66px;
+      span {
+        display: block;
+        height: 18px;
+        width: 18px;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+  }
+  .experience,
+  .expertise {
+    p {
+      line-height: 52px;
+    }
+  }
+}
+
+
+
+#box {
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: left;
+  animation-timing-function: linear;
+}
+
+
+@keyframes move {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1198px;
+  }
+}
+
+footer {
+  border-top: 1px solid #FFFFFF;
+  margin-top: 115px;
+  .socials {
+    margin-top: 64px;
+    p {
+      margin-right: 60px;
+    }
+  }
+}
