@@ -3,6 +3,15 @@
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
+
+
+
+* {
+  box-sizing: border-box;
+  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAO5JREFUOE+tlI0NgjAUhOkEuoGOgBOIE4gbyAZuoE4iTKAbWCbQEWQDnKDemVdSSBOLpclLf2i/Xnm9qsRTjDEZhtcI1qlMeaLWiFopxbpXlNsDYI7+BZH7NnDGbmgXALZ2rAMBwp2viOUPiP38QmMHGJUmX5AoeYyAuLAVlVkQpW4DlQynlQAVSn7s/U+IXbYh6ITeMRJ0JkgDwlTHlJogpnAWQ8HadirQe9KjTfazM5wxPv1ys2MuZIULuXctQs8sRmavwfy0s4ioommpLBRGSN4zrVUh5i0DfFdhzsH7jLhHEv8xCYzhw6Z9D9sH5B5g2ouPvdUAAAAASUVORK5CYII=')
+  ,auto;
+}
+
 html,
 body {
   padding: 0;
@@ -15,12 +24,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAO5JREFUOE+tlI0NgjAUhOkEuoGOgBOIE4gbyAZuoE4iTKAbWCbQEWQDnKDemVdSSBOLpclLf2i/Xnm9qsRTjDEZhtcI1qlMeaLWiFopxbpXlNsDYI7+BZH7NnDGbmgXALZ2rAMBwp2viOUPiP38QmMHGJUmX5AoeYyAuLAVlVkQpW4DlQynlQAVSn7s/U+IXbYh6ITeMRJ0JkgDwlTHlJogpnAWQ8HadirQe9KjTfazM5wxPv1ys2MuZIULuXctQs8sRmavwfy0s4ioommpLBRGSN4zrVUh5i0DfFdhzsH7jLhHEv8xCYzhw6Z9D9sH5B5g2ouPvdUAAAAASUVORK5CYII=')
-  ,auto;
 }
 
 
