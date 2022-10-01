@@ -1,19 +1,20 @@
 import Image from "next/image";
 
 
+import Footer from "../../components/footer";
+
 import hero from "../../assets/tia/tia-hero.jpg";
 import tia1 from "../../assets/tia/tia-1.jpg";
 import tia2 from "../../assets/tia/tia-2.jpg";
 import tia3 from "../../assets/tia/tia-3.jpg";
 import tia4 from "../../assets/tia/tia-4.jpg";
 import tia5 from "../../assets/tia/tia-5.jpg";
-import tia6 from "../../assets/tia/tia-6.jpg";
+import tia6 from "../../assets/tia/tia-6.gif";
 import tia7 from "../../assets/tia/tia-7.jpg";
-import tia8 from "../../assets/tia/tia-8.jpg";
+import tia8 from "../../assets/tia/tia-8.gif";
 import tia9 from "../../assets/tia/tia-9.jpg";
 import tia10 from "../../assets/tia/tia-10.jpg";
 import tia11 from "../../assets/tia/tia-11.jpg";
-import tia12 from "../../assets/tia/tia-12.jpg";
 
 
 
@@ -25,7 +26,7 @@ export default function Tia() {
             <div>
                 <Image src={hero} alt="tia hero"/>
             </div>
-            <div className="container">
+            <div className="container mt-[147px]">
                 <div className="flex flex-wrap">
                     <div className="proj-desc text-[#EAEAEA] ">
                         <h2 className="text-[74px]">Private terminal <br /> & Exclusive Club</h2>
@@ -73,20 +74,20 @@ export default function Tia() {
                     </div>
                 </div>
             </div>
-            <div className="list-images container">
-                <Image src={tia1}/>
-                <Image src={tia2}/>
-                <Image src={tia3}/>
-                <Image src={tia4}/>
-                <Image src={tia5}/>
-                <Image src={tia6}/>
-                <Image src={tia7}/>
-                <Image src={tia8}/>
-                <Image src={tia9}/>
-                <Image src={tia10}/>
-                <Image src={tia11}/>
-                <Image src={tia12}/>
+            <div className="list-images container mt-[123px] ">
+                <div className="leading-[0px]"><Image src={tia1}/></div>
+                <div className="leading-[0px]"><Image src={tia2}/></div>
+                <div className="leading-[0px]"><Image src={tia3}/></div>
+                <div className="leading-[0px]"><Image src={tia4}/></div>
+                <div className="leading-[0px]"><Image src={tia5}/></div>
+                <div className="leading-[0px]"><Image src={tia6}/></div>
+                <div className="leading-[0px]"><Image src={tia7}/></div>
+                <div className="leading-[0px]"><Image src={tia8}/></div>
+                <div className="leading-[0px]"><Image src={tia9}/></div>
+                <div className="leading-[0px]"><Image src={tia10}/></div>
+                <div className="leading-[0px]"><Image src={tia11}/></div>
             </div>
+            <Footer/>
         </div>
     );
 }

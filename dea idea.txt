@@ -1,0 +1,2 @@
+cursori te zmadhohet mbi gjerat e klikueshme
+cursori te behet //mix-blend-mode: multiply;

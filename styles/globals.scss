@@ -22,7 +22,9 @@ a {
   cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAO5JREFUOE+tlI0NgjAUhOkEuoGOgBOIE4gbyAZuoE4iTKAbWCbQEWQDnKDemVdSSBOLpclLf2i/Xnm9qsRTjDEZhtcI1qlMeaLWiFopxbpXlNsDYI7+BZH7NnDGbmgXALZ2rAMBwp2viOUPiP38QmMHGJUmX5AoeYyAuLAVlVkQpW4DlQynlQAVSn7s/U+IXbYh6ITeMRJ0JkgDwlTHlJogpnAWQ8HadirQe9KjTfazM5wxPv1ys2MuZIULuXctQs8sRmavwfy0s4ioommpLBRGSN4zrVUh5i0DfFdhzsH7jLhHEv8xCYzhw6Z9D9sH5B5g2ouPvdUAAAAASUVORK5CYII=')
   ,auto;
 }
-div {line-height: 1;}
+
+
+
 main {
   .header {
     h1 {
@@ -57,6 +59,18 @@ main {
     p {
       line-height: 52px;
     }
+  }
+  .no-hover-image:hover {
+    opacity: 0;
+  }
+  .hover-image {
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .pr-name.mt-tia-text {
+    margin-top: calc(100% - 70px);
   }
 }
 
