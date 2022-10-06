@@ -17,6 +17,9 @@ import remix from  "../assets/remix.jpg";
 import solatium from  "../assets/solatium.jpg";
 import downloadIcon from "../assets/download-icon.svg";
 import tiaGif from "../assets/tia/terminal-perview.gif";
+import libriGif from "../assets/libri/libri.gif";
+import bookHero from "../assets/libri/book hero.jpg";
+import libriHero from "../assets/libri/libri hero.jpg";
 
 
 
@@ -90,7 +93,7 @@ export default function Home() {
           </div>
           <div className="container mt-[205px] uppercase">
             <div className="grid grid-cols-3">
-              <div className="flex-col flex justify-between ml-8 text-right mr-8">
+              <div className="flex-col flex justify-between ml-8 mb-4 text-right mr-8">
                 <div className="text-[22px]">
                   <div className="date">(2021)</div>
                   <div className="job-desc leading-none">Brand Identity <br/>Web Design</div>
@@ -105,7 +108,7 @@ export default function Home() {
           <div className="container mt-[205px] uppercase">
             <div className="grid grid-cols-3">
               <div className="col-span-2"><Image src={azrendering}/></div>
-              <div className="flex-col flex justify-between ml-8">
+              <div className="flex-col flex justify-between ml-8 mb-4">
                 <div className="text-[22px]">
                   <div className="date">(2021)</div>
                   <div className="job-desc leading-none">Brand Identity <br/>Web Design</div>
@@ -116,7 +119,7 @@ export default function Home() {
           </div>
           <div className="container mt-[205px] uppercase">
             <div className="grid grid-cols-3">
-              <div className="flex-col flex justify-between ml-8 text-right mr-8">
+              <div className="flex-col flex justify-between ml-8 mb-4 text-right mr-8">
                 <div className="text-[22px]">
                   <div className="date">(2021)</div>
                   <div className="job-desc leading-none">Brand Identity <br/>Web Design</div>
@@ -129,7 +132,7 @@ export default function Home() {
           <div className="container mt-[205px] uppercase">
             <div className="grid grid-cols-3">
               <div className="col-span-2"><Image src={remix}/></div>
-              <div className="flex-col flex justify-between ml-8">
+              <div className="flex-col flex justify-between ml-8 mb-4">
                 <div className="text-[22px]">
                   <div className="date">(2021)</div>
                   <div className="job-desc leading-none">Brand Identity <br/>Web Design</div>
@@ -140,7 +143,7 @@ export default function Home() {
           </div>
           <div className="container mt-[205px] uppercase">
             <div className="grid grid-cols-3">
-              <div className="flex-col flex justify-between ml-8 text-right mr-8">
+              <div className="flex-col flex justify-between ml-8 mb-4 text-right mr-8">
                 <div className="text-[22px]">
                   <div className="date">(2021)</div>
                   <div className="job-desc leading-none">Brand Identity <br/>Web Design</div>
@@ -148,6 +151,30 @@ export default function Home() {
                 <div className="pr-name text-[42px] leading-none">solatium</div>
               </div>
               <div className="col-span-2"><Image src={solatium}/></div>
+            </div>
+          </div>
+          <div className="container mt-[205px] uppercase">
+            <div className="grid grid-cols-3">
+              <div className="col-span-2 relative">
+                <div className="no-hover-image absolute top-0">
+                  <Link href="/libri">
+                    <Image src={libriHero}/>
+                  </Link>
+                </div>
+                <div className="hover-image absolute top-0">
+                  <Link href="/libri">
+                      <Image src={libriGif}/>
+                  </Link>
+                </div>
+              </div>
+              {/* <div className="col-span-2"><Image src={libriGif}/></div> */}
+              <div className="flex-col flex justify-between ml-8 mb-4">
+                <div className="text-[22px]">
+                  <div className="date">(2022)</div>
+                  <div className="job-desc leading-none">cover design <br />Illustration <br /> editorial design</div>
+                </div>
+                <div className="pr-name text-[42px] leading-none">That summer of exciting & brilliant discoveries</div>
+              </div>
             </div>
           </div>
           <div className="container grid grid-cols-2 mt-44">

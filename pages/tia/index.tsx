@@ -15,7 +15,7 @@ import tia8 from "../../assets/tia/tia-8.gif";
 import tia9 from "../../assets/tia/tia-9.jpg";
 import tia10 from "../../assets/tia/tia-10.jpg";
 import tia11 from "../../assets/tia/tia-11.jpg";
-
+import street from "../../assets/tia/street-small.jpg";
 
 
 export default function Tia() {
@@ -86,6 +86,18 @@ export default function Tia() {
                 <div className="leading-[0px]"><Image src={tia9}/></div>
                 <div className="leading-[0px]"><Image src={tia10}/></div>
                 <div className="leading-[0px]"><Image src={tia11}/></div>
+            </div>
+            <div className="container border-t mt-[52px]">
+                <div className="grid grid-cols-2 other-projects-hover">
+                    <div className="text-[#EAEAEA] flex flex-col justify-between">
+                        <div><h2 className="text-[88px]">The Street Party</h2></div>
+                        <div><p className="text-[42px]">2021</p></div>
+                    </div>
+                    <div className="ml-auto mt-[43px] other-projects-image">
+                        <div className="street-small-image"><Image src={street}/></div>
+                        
+                    </div>
+                </div>
             </div>
             <Footer/>
         </div>
