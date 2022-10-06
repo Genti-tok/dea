@@ -26,9 +26,6 @@ import libri17 from "../../assets/libri/17.jpg"
 
 
 
-
-
-
 export default function Libri() {
 
     return (

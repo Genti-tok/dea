@@ -123,13 +123,15 @@ main {
     &::after {
       content: "";
       background-image: url(../assets/next.svg);
-      height: 124px;
+      height: 100%;
       width: 124px;
       position: absolute;
       background-repeat: no-repeat;
       top: 0;
       right: 0;
       opacity: 0;
+      background-size: contain;
+      background-position: left center;
     }
   }
 }

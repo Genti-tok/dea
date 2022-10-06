@@ -25,11 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/libri": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/libri.js"
-    ],
     "/tia": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
