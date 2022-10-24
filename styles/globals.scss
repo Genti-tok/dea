@@ -8,8 +8,6 @@
 
 * {
   box-sizing: border-box;
-  // cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAO5JREFUOE+tlI0NgjAUhOkEuoGOgBOIE4gbyAZuoE4iTKAbWCbQEWQDnKDemVdSSBOLpclLf2i/Xnm9qsRTjDEZhtcI1qlMeaLWiFopxbpXlNsDYI7+BZH7NnDGbmgXALZ2rAMBwp2viOUPiP38QmMHGJUmX5AoeYyAuLAVlVkQpW4DlQynlQAVSn7s/U+IXbYh6ITeMRJ0JkgDwlTHlJogpnAWQ8HadirQe9KjTfazM5wxPv1ys2MuZIULuXctQs8sRmavwfy0s4ioommpLBRGSN4zrVUh5i0DfFdhzsH7jLhHEv8xCYzhw6Z9D9sH5B5g2ouPvdUAAAAASUVORK5CYII=')
-  // ,auto;
   cursor: none;
 }
 // @font-face {
@@ -26,9 +24,10 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  // transform: translate(-9px, -9px);
+  transform: translate(-9px, -9px);
   z-index: 10;
 }
+
 
 html,
 body {
@@ -52,7 +51,7 @@ main {
     background-repeat: repeat-x;
     background-size: 1120px;
     background-position: center;
-    height: 375px;
+    height: 150px;
     // h1 {
     //   margin-right: 20px;
     //   span {

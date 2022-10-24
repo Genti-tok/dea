@@ -53,10 +53,19 @@ export default function Home() {
       y: mousePosition.y - 18,
       mixBlendMode: "difference",
     },
+    img: {
+      height: 72,
+      width: 72,
+      x: mousePosition.x - 36,
+      y: mousePosition.y - 36,
+      mixBlendMode: "difference",
+    },
   };
 
   const textEnter = () => setCursorVariant("text");
   const textLeave = () => setCursorVariant("default");
+  const imgEnter = () => setCursorVariant("img");
+  const imgLeave = () => setCursorVariant("default");
   return (
     <div className="px-2 text-[#EAEAEA] home-page">
       <motion.div
@@ -70,7 +79,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <main className="overflow-hidden">
-        <div className="flex header" id="box">
+        <div
+          className="flex header"
+          id="box"
+          onMouseEnter={imgEnter}
+          onMouseLeave={imgLeave}
+        >
           {/* <h1 className="text-[#EAEAEA] text-[296px] flex justify-center items-center">POrtfolio <span></span></h1>
           <h1 className="text-[#EAEAEA] text-[296px] flex justify-center items-center">POrtfolio <span></span></h1>
           <h1 className="text-[#EAEAEA] text-[296px] flex justify-center items-center">POrtfolio <span></span></h1>
@@ -131,27 +145,49 @@ export default function Home() {
               <div className="no-hover-image absolute top-0">
                 <Link href="/tia">
                   <a>
-                    <Image src={terminal} />
+                    <Image
+                      src={terminal}
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    />
                   </a>
                 </Link>
               </div>
               <div className="hover-image absolute top-0">
                 <Link href="/tia">
                   <a>
-                    <Image src={tiaGif} />
+                    <Image
+                      src={tiaGif}
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    />
                   </a>
                 </Link>
               </div>
             </div>
             <div className="ml-8">
               <div className="text-[22px]">
-                <div className="date">(2021)</div>
-                <div className="job-desc leading-none">
+                <div
+                  className="date"
+                  onMouseEnter={imgEnter}
+                  onMouseLeave={imgLeave}
+                >
+                  (2021)
+                </div>
+                <div
+                  className="job-desc leading-none"
+                  onMouseEnter={imgEnter}
+                  onMouseLeave={imgLeave}
+                >
                   Brand Identity <br />
                   Web Design
                 </div>
               </div>
-              <div className="pr-name text-[42px] leading-none mt-tia-text">
+              <div
+                className="pr-name text-[42px] leading-none mt-tia-text"
+                onMouseEnter={imgEnter}
+                onMouseLeave={imgLeave}
+              >
                 Private terminal & Exclusive Club{" "}
               </div>
             </div>
