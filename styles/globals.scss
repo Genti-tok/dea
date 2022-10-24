@@ -8,13 +8,27 @@
 
 * {
   box-sizing: border-box;
-  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAO5JREFUOE+tlI0NgjAUhOkEuoGOgBOIE4gbyAZuoE4iTKAbWCbQEWQDnKDemVdSSBOLpclLf2i/Xnm9qsRTjDEZhtcI1qlMeaLWiFopxbpXlNsDYI7+BZH7NnDGbmgXALZ2rAMBwp2viOUPiP38QmMHGJUmX5AoeYyAuLAVlVkQpW4DlQynlQAVSn7s/U+IXbYh6ITeMRJ0JkgDwlTHlJogpnAWQ8HadirQe9KjTfazM5wxPv1ys2MuZIULuXctQs8sRmavwfy0s4ioommpLBRGSN4zrVUh5i0DfFdhzsH7jLhHEv8xCYzhw6Z9D9sH5B5g2ouPvdUAAAAASUVORK5CYII=')
-  ,auto;
+  // cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAO5JREFUOE+tlI0NgjAUhOkEuoGOgBOIE4gbyAZuoE4iTKAbWCbQEWQDnKDemVdSSBOLpclLf2i/Xnm9qsRTjDEZhtcI1qlMeaLWiFopxbpXlNsDYI7+BZH7NnDGbmgXALZ2rAMBwp2viOUPiP38QmMHGJUmX5AoeYyAuLAVlVkQpW4DlQynlQAVSn7s/U+IXbYh6ITeMRJ0JkgDwlTHlJogpnAWQ8HadirQe9KjTfazM5wxPv1ys2MuZIULuXctQs8sRmavwfy0s4ioommpLBRGSN4zrVUh5i0DfFdhzsH7jLhHEv8xCYzhw6Z9D9sH5B5g2ouPvdUAAAAASUVORK5CYII=')
+  // ,auto;
+  cursor: none;
 }
 // @font-face {
 //   font-family: ;
 //   src: url();
 // }
+
+.cursor {
+  background-color: #FFFFFF;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  // transform: translate(-9px, -9px);
+  z-index: 10;
+}
 
 html,
 body {
@@ -34,17 +48,22 @@ a {
 
 main {
   .header {
-    h1 {
-      margin-right: 20px;
-      span {
-        display: block;
-        height: 24px;
-        width: 24px;
-        background-color: white;
-        border-radius: 50%;
-        margin: 50px 25px 0 50px;
-      }
-    }
+    background-image: url("../assets/portfolio.svg");
+    background-repeat: repeat-x;
+    background-size: 1120px;
+    background-position: center;
+    height: 375px;
+    // h1 {
+    //   margin-right: 20px;
+    //   span {
+    //     display: block;
+    //     height: 24px;
+    //     width: 24px;
+    //     background-color: white;
+    //     border-radius: 50%;
+    //     margin: 50px 25px 0 50px;
+    //   }
+    // }
   }
   .blank-space {
     .dot {
@@ -56,7 +75,7 @@ main {
         display: block;
         height: 18px;
         width: 18px;
-        background-color: white;
+        background-color: transparent;
         border-radius: 50%;
       }
     }
@@ -97,7 +116,7 @@ main {
     margin-left: 0px;
   }
   100% {
-    margin-left: -1198px;
+    margin-left: -2340px;
   }
 }
 
@@ -111,7 +130,7 @@ main {
       .street-small-image {
         opacity: 0;
         visibility: hidden;
-        transition: .5s all;
+        // transition: .5s;
       }
       &::after {
         opacity: 1;
