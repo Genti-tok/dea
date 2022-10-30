@@ -4,7 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        libre: ['"Libre Caslon Display", "sans-serif"'],
+        ibmplex: ['"IBM Plex mono", "sans-serif"'],
+      },
+    },
+
     container: {
       // you can configure the container to be centered
       center: true,

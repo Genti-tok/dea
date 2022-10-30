@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Cursor() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
   });
-  console.log(mousePosition);
+  const [cursorVariant, setCursorVariant] = useState("default");
+  // console.log(mousePosition);
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -23,13 +24,31 @@ export default function Cursor() {
   }, []);
   const variants = {
     default: {
-      x: mousePosition.x - 8,
-      y: mousePosition.y - 8,
+      x: mousePosition.x - 9,
+      y: mousePosition.y - 9,
+    },
+    text: {
+      height: 36,
+      width: 36,
+      x: mousePosition.x - 18,
+      y: mousePosition.y - 18,
+      mixBlendMode: "difference",
+    },
+    img: {
+      height: 72,
+      width: 72,
+      x: mousePosition.x - 36,
+      y: mousePosition.y - 36,
+      mixBlendMode: "difference",
     },
   };
   return (
     <>
-      <div className="cursor"></div>
+      <motion.div
+        className="cursor"
+        variants={variants}
+        animate={cursorVariant}
+      />
     </>
   );
 }
