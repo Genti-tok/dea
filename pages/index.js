@@ -258,15 +258,21 @@ export default function Home() {
                   onMouseEnter={imgEnter}
                   onMouseLeave={imgLeave}
                 >
-                  (2021)
+                  <Link href="/arameras">
+                    <a>(2021)</a>
+                  </Link>
                 </div>
                 <div
                   className="job-desc leading-none"
                   onMouseEnter={imgEnter}
                   onMouseLeave={imgLeave}
                 >
-                  Brand Identity <br />
-                  Web Design
+                  <Link href="/arameras">
+                    <a>
+                      Brand Identity <br />
+                      Web Design
+                    </a>
+                  </Link>
                 </div>
               </div>
               <div
@@ -274,15 +280,21 @@ export default function Home() {
                 onMouseEnter={imgEnter}
                 onMouseLeave={imgLeave}
               >
-                arameras
+                <Link href="/arameras">
+                  <a>arameras</a>
+                </Link>
               </div>
             </div>
             <div className="col-span-2">
-              <Image
-                src={arameras}
-                onMouseEnter={imgEnter}
-                onMouseLeave={imgLeave}
-              />
+              <Link href="/arameras">
+                <a>
+                  <Image
+                    src={arameras}
+                    onMouseEnter={imgEnter}
+                    onMouseLeave={imgLeave}
+                  />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
