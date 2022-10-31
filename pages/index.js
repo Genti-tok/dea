@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 import Footer from "../components/footer";
-import Ferideja from "../assets/deaimeraj.svg";
+import Ferideja from "../assets/deaImeraj.svg";
 
 import dea1 from "../assets/Dea Imeraj.jpg";
 import dea2 from "../assets/Ferideja 2.jpg";
