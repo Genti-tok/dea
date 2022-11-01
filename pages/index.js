@@ -80,15 +80,12 @@ export default function Home() {
             <div className="col-span-1 opacity-0 hover:opacity-100 h-full flex items-start profile-image-size">
               <Image src={dea1} />
             </div>
-            <div className="flex col-span-4 max-w-[880px] justify-center items-center">
-              <div>
-                {/* <h2 className="text-[77px] text-right leading-tight">
-                  Dea Imeraj
-                </h2> */}
+            <div className="flex col-span-4 max-w-[1060px] justify-center items-center mx-auto">
+              <div className="emri-svg">
                 <Image src={Ferideja} alt="Ferideja" />
               </div>
               <div>
-                <h3 className="text-[18px] leading-6 mx-[23px] max-w-[880px] font-ibmplex">
+                <h3 className="text-[18px] leading-6 mx-[23px] max-w-[700px] font-ibmplex">
                   Hello I’m Dea, a graphic designer and illustrator based in
                   Tirana/Albania, currently working at Tok Digital Agency. My
                   practice of graphic design is playful and didactic, attached
@@ -103,7 +100,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="menu container flex text-[77px] items-center justify-center mt-[58px]">
+        <div className="menu container flex text-[77px] items-center justify-center mt-[58px] font-libre">
           <div className="">
             <span>work</span>
           </div>
