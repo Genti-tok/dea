@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-
+import Cursor from "../../components/customCursor";
 import Footer from "../../components/footer";
 
 import hero from "../../assets/tia/tia-hero.jpg";
@@ -22,6 +22,7 @@ export default function Tia() {
 
     return (
         <div className="tia ">
+            <Cursor />
             <div className="menu"></div>
             <div>
                 <Image src={hero} alt="tia hero"/>

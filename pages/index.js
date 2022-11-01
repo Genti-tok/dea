@@ -85,7 +85,7 @@ export default function Home() {
                 <Image src={Ferideja} alt="Ferideja" />
               </div>
               <div>
-                <h3 className="text-[18px] leading-6 mx-[23px] max-w-[700px] font-ibmplex">
+                <h3 className="text-[18px] leading-6 ml-[23px] max-w-[700px] font-ibmplex">
                   Hello I’m Dea, a graphic designer and illustrator based in
                   Tirana/Albania, currently working at Tok Digital Agency. My
                   practice of graphic design is playful and didactic, attached
