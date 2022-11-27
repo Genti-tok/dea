@@ -29,7 +29,7 @@ export default function Tia() {
             </div>
             <div className="container mt-[147px]">
                 <div className="flex flex-wrap">
-                    <div className="proj-desc text-[#EAEAEA] ">
+                    <div className="proj-desc text-[#EAEAEA] text-[18px]">
                         <h2 className="text-[74px]">Private terminal <br /> & Exclusive Club</h2>
                         <div className="labels">
                             <div className="flex mt-[50px]">
@@ -55,7 +55,7 @@ export default function Tia() {
                         </div>
                     </div>
 
-                    <div className="max-w-[560px] text-[#EAEAEA] text-[22px] ml-[104px] mt-[30px]">
+                    <div className="max-w-[560px] text-[#EAEAEA] text-[18px] ml-[104px] mt-[30px]">
                         <p>
                             The most VIP way through “Tirana International Airport”, is via a separate terminal on a discreet location, apart  from the main terminal and away from long and noisy queue lines.
                             “Private Terminal & Exclusive Club”, has been developed for passengers who want to spend time in a more private and elegant atmosphere. 

@@ -30,7 +30,7 @@ export default function Arameras() {
       </div>
       <div className="container mt-[147px]">
         <div className="flex flex-wrap">
-          <div className="proj-desc text-[#EAEAEA] ">
+          <div className="proj-desc text-[#EAEAEA] text-[18px]">
             <h2 className="text-[64px] uppercase">
               ARAMERAS
               <br />
@@ -67,7 +67,7 @@ export default function Arameras() {
             </div>
           </div>
 
-          <div className="max-w-[560px] text-[#EAEAEA] text-[22px] ml-[104px] mt-[30px]">
+          <div className="max-w-[560px] text-[#EAEAEA] text-[18px] ml-[104px] mt-[30px]">
             <p>
               “Arameras Beach Lodges”, is a resort in Arameras private beach.
               The beach is hidden away behind the forests within the “Butrint

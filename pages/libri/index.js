@@ -79,7 +79,7 @@ export default function Libri() {
       </div>
       <div className="container mt-[147px]">
         <div className="flex flex-wrap">
-          <div className="proj-desc text-[#EAEAEA] ">
+          <div className="proj-desc text-[#EAEAEA] text-[18px]">
             <h2 className="text-[74px] uppercase">
               That summer <br /> of exciting & <br /> brilliant <br />{" "}
               discoveries
@@ -115,7 +115,7 @@ export default function Libri() {
             </div>
           </div>
 
-          <div className="max-w-[560px] text-[#EAEAEA] text-[22px] ml-[104px] mt-[30px]">
+          <div className="max-w-[560px] text-[#EAEAEA] text-[18px] ml-[104px] mt-[30px]">
             <p>
               “The Summer of Exciting Discoveries” is a math book created by 3rd
               grade children.

@@ -23,6 +23,7 @@ import bookHero from "../assets/libri/home-libri.gif";
 import libriHero from "../assets/libri/libri hero.jpg";
 import partyGif from "../assets/party/the-street-party-homepage.gif";
 import azGif from "../assets/az/az-rendering-hoover.gif";
+import remixGif from "../assets/remix/remix-hoover.gif";
 
 export default function Home() {
   let nameItem = useRef(null);
@@ -124,13 +125,13 @@ export default function Home() {
           </div>
         </div>
         <div className="menu container flex text-[77px] items-center justify-center mt-[58px] font-libre">
-          <div className="">
+          <div className="menu-span">
             <span>work</span>
           </div>
-          <div className="ml-4">
+          <div className="menu-span ml-4">
             <span>about</span>
           </div>
-          <div className="ml-4">
+          <div className="menu-span ml-4">
             <span>contact</span>
           </div>
         </div>
@@ -254,7 +255,7 @@ export default function Home() {
           <div className="grid grid-cols-3 h-full">
             <div className="col-span-2 relative">
               <div className="no-hover-image absolute top-0">
-                <Link href="/tia">
+                <Link href="/az">
                   <a>
                     <Image
                       src={azrendering}
@@ -265,7 +266,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="hover-image absolute top-0">
-                <Link href="/tia">
+                <Link href="/az">
                   <a>
                     <Image
                       src={azGif}
@@ -298,7 +299,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container mt-[205px] uppercase arameras">
+        <div className="container mt-[205px] uppercase h-[463px] arameras">
           <div className="grid grid-cols-3">
             <div className="flex-col flex justify-between ml-8 mb-4 text-right mr-8">
               <div className="text-[22px]">
@@ -347,24 +348,73 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container mt-[205px] uppercase remix">
-          <div className="grid grid-cols-3">
-            <div className="col-span-2">
-              <Image src={remix} />
+        <div className="container mt-[205px] uppercase h-[463px] remix">
+          <div className="grid grid-cols-3 h-full">
+            <div className="col-span-2 relative max-h-[450px] overflow-hidden">
+              <div className="no-hover-image absolute top-0">
+                <Link href="/remix">
+                  <a>
+                    <Image
+                      src={remix}
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    />
+                  </a>
+                </Link>
+              </div>
+              <div className="hover-image absolute top-0">
+                <Link href="/remix">
+                  <a>
+                    <Image
+                      src={remixGif}
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    />
+                  </a>
+                </Link>
+              </div>
             </div>
             <div className="flex-col flex justify-between ml-8 mb-4">
               <div className="text-[22px]">
-                <div className="date">(2021)</div>
-                <div className="job-desc leading-none">
-                  Brand Identity <br />
-                  Web Design
-                </div>
+                <Link href="/remix">
+                  <a>
+                    <div
+                      className="date"
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    >
+                      (2021)
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/remix">
+                  <a>
+                    <div
+                      className="job-desc leading-none"
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    >
+                      Brand Identity <br />
+                      Web Design
+                    </div>
+                  </a>
+                </Link>
               </div>
-              <div className="pr-name text-[42px] leading-none">remix</div>
+              <Link href="/remix">
+                <a>
+                  <div
+                    className="pr-name text-[42px] leading-none"
+                    onMouseEnter={imgEnter}
+                    onMouseLeave={imgLeave}
+                  >
+                    remix
+                  </div>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="container mt-[205px] uppercase solatium">
+        <div className="container mt-[205px] uppercase h-[463px] solatium">
           <div className="grid grid-cols-3">
             <div className="flex-col flex justify-between ml-8 mb-4 text-right mr-8">
               <div className="text-[22px]">
@@ -381,33 +431,59 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container mt-[205px] uppercase h-[457px] libri">
+        <div className="container mt-[205px] uppercase h-[463px] libri">
           <div className="grid grid-cols-3 h-full">
             <div className="col-span-2 relative">
               <div className="no-hover-image absolute top-0">
                 <Link href="/libri">
                   <a>
-                    <Image src={libriHero} />
+                    <Image
+                      src={libriHero}
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    />
                   </a>
                 </Link>
               </div>
               <div className="hover-image absolute top-0">
                 <Link href="/libri">
                   <a>
-                    <Image src={bookHero} />
+                    <Image
+                      src={bookHero}
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    />
                   </a>
                 </Link>
               </div>
             </div>
             <div className="flex-col flex justify-between ml-8 mb-4">
               <div className="text-[22px]">
-                <div className="date">(2022)</div>
-                <div className="job-desc leading-none">
-                  cover design <br />
-                  Illustration <br /> editorial design
-                </div>
+                <Link href="/libri">
+                  <div
+                    className="date"
+                    onMouseEnter={imgEnter}
+                    onMouseLeave={imgLeave}
+                  >
+                    (2022)
+                  </div>
+                </Link>
+                <Link href="/libri">
+                  <div
+                    className="job-desc leading-none"
+                    onMouseEnter={imgEnter}
+                    onMouseLeave={imgLeave}
+                  >
+                    cover design <br />
+                    Illustration <br /> editorial design
+                  </div>
+                </Link>
               </div>
-              <div className="pr-name text-[42px] leading-none">
+              <div
+                className="pr-name text-[42px] leading-none"
+                onMouseEnter={imgEnter}
+                onMouseLeave={imgLeave}
+              >
                 That summer of exciting & brilliant discoveries
               </div>
             </div>

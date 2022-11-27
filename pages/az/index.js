@@ -26,7 +26,7 @@ export default function AZRendering() {
       </div>
       <div className="container mt-[147px]">
         <div className="flex flex-wrap justify-between">
-          <div className="proj-desc text-[#EAEAEA] ">
+          <div className="proj-desc text-[#EAEAEA] text-[18px]">
             <h2 className="text-[74px] font-libre">
               Az <br /> Rendering
             </h2>
@@ -62,7 +62,7 @@ export default function AZRendering() {
             </div>
           </div>
 
-          <div className="max-w-[560px] text-[#EAEAEA] text-[22px] ml-[104px] mt-[30px]">
+          <div className="max-w-[560px] text-[#EAEAEA] text-[18px] ml-[104px] mt-[30px]">
             <p>
               AZ Rendering is a brand that produces chemical fertilizer and
               promotes circular economy. <br /> In a circular economy, waste is

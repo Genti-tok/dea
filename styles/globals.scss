@@ -87,6 +87,20 @@ main {
       opacity: 1;
     }
   }
+  .menu-span {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0.875rem;
+      left: 0.5rem;
+      right: 0.5rem;
+      height: 0.5rem;
+      background-image: url('../assets/underline.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
   // .pr-name.mt-tia-text {
   //   margin-top: calc(100% - 70px);
   // }
@@ -112,7 +126,7 @@ main {
   }
 }
 
-.tia, .libri-project, .party-project, .arameras-project {
+.tia, .libri-project, .party-project, .arameras-project, .remix, .azrendering {
   .other-projects-hover:hover {
     h2,
     p {
