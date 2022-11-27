@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+import React, { useEffect, useRef, useState } from "react";
 
 import Footer from "../components/footer";
 import Ferideja from "../assets/deaImeraj.svg";
@@ -19,8 +22,23 @@ import tiaGif from "../assets/tia/terminal-perview.gif";
 import bookHero from "../assets/libri/home-libri.gif";
 import libriHero from "../assets/libri/libri hero.jpg";
 import partyGif from "../assets/party/the-street-party-homepage.gif";
+import azGif from "../assets/az/az-rendering-hoover.gif";
 
 export default function Home() {
+  let nameItem = useRef(null);
+
+  useEffect(() => {
+    gsap.to(nameItem, {
+      scrollTrigger: {
+        trigger: ".emri-svg",
+        start: "-300px top",
+        scrub: 1,
+        // markers: true,
+      },
+      y: 350,
+    });
+  }, []);
+
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -62,8 +80,8 @@ export default function Home() {
     },
   };
 
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
+  // const textEnter = () => setCursorVariant("text");
+  // const textLeave = () => setCursorVariant("default");
   const imgEnter = () => setCursorVariant("img");
   const imgLeave = () => setCursorVariant("default");
   return (
@@ -80,11 +98,16 @@ export default function Home() {
             <div className="col-span-1 opacity-0 hover:opacity-100 h-full flex items-start profile-image-size">
               <Image src={dea1} />
             </div>
-            <div className="flex col-span-4 max-w-[1060px] justify-center items-center mx-auto">
-              <div className="emri-svg">
+            <div className="flex col-span-4 w-full justify-between items-center mx-auto">
+              <div
+                className="emri-svg"
+                ref={(el) => {
+                  nameItem = el;
+                }}
+              >
                 <Image src={Ferideja} alt="Ferideja" />
               </div>
-              <div>
+              <div className="mr-auto">
                 <h3 className="text-[18px] leading-6 ml-[23px] max-w-[700px] font-ibmplex">
                   Hello I’m Dea, a graphic designer and illustrator based in
                   Tirana/Albania, currently working at Tok Digital Agency. My
@@ -137,7 +160,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="ml-8 flex-col flex justify-between h-full">
+            <div className="ml-8 flex-col flex justify-between">
               <div className="text-[22px]">
                 <div
                   className="date"
@@ -162,7 +185,7 @@ export default function Home() {
                 </div>
               </div>
               <div
-                className="pr-name text-[42px] leading-none mt-tia-text font-libre"
+                className="pr-name text-[42px] leading-none mt-tia-text font-libre mb-4"
                 onMouseEnter={imgEnter}
                 onMouseLeave={imgLeave}
               >
@@ -227,20 +250,49 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container mt-[205px] uppercase az-rendering">
-          <div className="grid grid-cols-3">
-            <div className="col-span-2">
-              <Image src={azrendering} />
+        <div className="container mt-[205px] uppercase h-[463px] az-rendering">
+          <div className="grid grid-cols-3 h-full">
+            <div className="col-span-2 relative">
+              <div className="no-hover-image absolute top-0">
+                <Link href="/tia">
+                  <a>
+                    <Image
+                      src={azrendering}
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    />
+                  </a>
+                </Link>
+              </div>
+              <div className="hover-image absolute top-0">
+                <Link href="/tia">
+                  <a>
+                    <Image
+                      src={azGif}
+                      onMouseEnter={imgEnter}
+                      onMouseLeave={imgLeave}
+                    />
+                  </a>
+                </Link>
+              </div>
             </div>
             <div className="flex-col flex justify-between ml-8 mb-4">
               <div className="text-[22px]">
                 <div className="date">(2021)</div>
-                <div className="job-desc leading-none">
+                <div
+                  className="job-desc leading-none"
+                  onMouseEnter={imgEnter}
+                  onMouseLeave={imgLeave}
+                >
                   Brand Identity <br />
                   Web Design
                 </div>
               </div>
-              <div className="pr-name text-[42px] leading-none">
+              <div
+                className="pr-name text-[42px] leading-none"
+                onMouseEnter={imgEnter}
+                onMouseLeave={imgLeave}
+              >
                 Az Rendering
               </div>
             </div>
