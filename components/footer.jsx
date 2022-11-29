@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="w-full container text-[#EAEAEA]">
+        <footer className="w-full container text-[#EAEAEA] font-libre">
             <div className="grid grid-cols-3">
                 <div className="col-span-2">
-                <div className="flex socials">
+                <div className="flex socials flex-wrap">
                     <p>linkedin</p>
                     <p>behance</p>
                     <p>dribble</p>

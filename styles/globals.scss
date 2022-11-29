@@ -30,7 +30,7 @@
   left: 0;
   pointer-events: none;
   transform: translate(-9px, -9px);
-  z-index: 10;
+  z-index: 1000;
 }
 
 
@@ -69,6 +69,10 @@ main {
   .hero {
     .emri-svg {
       height: 190px;
+      width: 222px;
+    }
+    .emri-svg-2 {
+      height: 80px;
       width: 222px;
     }
   }
@@ -161,6 +165,23 @@ main {
   }
 }
 
+.about {
+  .download {
+    .download-hover {
+      background-image: url(../assets/download-arrow.svg);
+      background-size: contain;
+      background-repeat: repeat;
+      width: 40px;
+      height: 40px;
+      &:hover {
+        transform: rotate(45deg);
+        transition: 0.3s ease-in;
+      }
+      transition: 0.3s ease-out;
+    }
+  }
+
+}
 
 
 footer {

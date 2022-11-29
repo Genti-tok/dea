@@ -19,7 +19,7 @@ import party10 from "../../assets/party/10.jpg";
 
 export default function Party() {
   return (
-    <div className="party-project">
+    <div className="party-project px-[37px] md:px-0">
       <Cursor />
       <div className="menu"></div>
       <div>

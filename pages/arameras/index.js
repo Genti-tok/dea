@@ -22,7 +22,7 @@ import arameras13 from "../../assets/arameras/13.jpg";
 
 export default function Arameras() {
   return (
-    <div className="arameras-project">
+    <div className="arameras-project px-[37px] md:px-0">
       <Cursor />
       <div className="menu"></div>
       <div>
