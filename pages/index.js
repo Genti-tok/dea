@@ -93,7 +93,7 @@ export default function Home() {
   return (
     <div className="px-[37px] md:px-2 text-[#EAEAEA] home-page">
       <motion.div
-        className="cursor"
+        className="cursor hidden md:block"
         variants={variants}
         animate={cursorVariant}
       />

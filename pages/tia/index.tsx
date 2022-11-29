@@ -24,7 +24,10 @@ export default function Tia() {
 
     return (
         <div className="tia font-ibmplex">
+            <div className="hidden md:block">
+
             <Cursor />
+            </div>
             <div className="h-[110px] sticky top-0 z-10 bg-[#0E0E0F]">
                 <div className="menu-wrapper flex container items-center h-full">
                     <div className="logo hidden md:block"><Image src={Ferideja} alt="Ferideja" /></div>
