@@ -373,7 +373,7 @@ export default function Home() {
         <div className="container md:mt-[92px] uppercase h-[333px] md:h-[463px] remix">
           <div className="grid md:grid-cols-3 h-full">
             <div className="md:col-span-2 h-[180px] relative">
-              <div className="no-hover-image absolute top-0">
+              <div className="no-hover-image absolute top-0 h-[450px] overflow-hidden">
                 <Link href="/remix">
                   <a>
                     <Image
@@ -396,7 +396,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="md:ml-8 md:flex-col flex justify-between">
+            <div className="md:ml-8 md:flex-col flex justify-between mb-4">
               <div className="text-[12px] md:text-[22px] order-2 md:order-1 text-right md:text-left">
                 <Link href="/remix">
                   <a>
