@@ -40,7 +40,7 @@ body {
   margin: 0;
   // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color:#0E0E0F;
+  background-color:#000;
   // font-size: 62.5%;
 }
 
@@ -48,32 +48,65 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-
-
-main {
-  .header {
-    background-image: url("../assets/portfolio.svg");
-    background-repeat: repeat-x;
-    background-size: 1120px;
-    background-position: center;
-    height: 150px;
+@media only screen and (max-width: 600px) {
+  .mobile-order-text { 
+    order: 2;
+    display: flex;
+    flex-direction: column;
   }
+  .mobile-order-img {
+    order: 2;
+    display: flex;
+  }
+}
+
+#box {
+  animation-name: move;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 280px;
+  img {
+    scale: 1.03;
+  }
+}
+
+@keyframes move {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+main {
+
   .profile-image-size {
     span {
       img {
-        height: 265px;
+        height: 170px !important;
+        width: auto !important;
+        object-fit: scale-down;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    &.size2 {
+      span {
+        img {
+          justify-content: flex-start;
+        }
       }
     }
   }
   .hero {
     .emri-svg {
-      height: 190px;
-      width: 222px;
+      // height: 190px;
+      width: 170px;
     }
     .emri-svg-2 {
-      height: 80px;
-      width: 222px;
+      // height: 80px;
+      width: 170px;
     }
   }
   .experience,
@@ -112,23 +145,7 @@ main {
 
 
 
-#box {
-  animation-name: move;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: left;
-  animation-timing-function: linear;
-}
 
-
-@keyframes move {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: -2340px;
-  }
-}
 
 .tia, .libri-project, .party-project, .arameras-project, .remix, .azrendering {
   .other-projects-hover:hover {
@@ -171,8 +188,8 @@ main {
       background-image: url(../assets/download-arrow.svg);
       background-size: contain;
       background-repeat: repeat;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       &:hover {
         transform: rotate(45deg);
         transition: 0.3s ease-in;
