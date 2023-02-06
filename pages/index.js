@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 import React, { useEffect, useRef, useState } from "react";
 
 import Footer from "../components/footer";
-import Ferideja from "../assets/deaImeraj.svg";
+import Ferideja from "../assets/dea Imeraj.svg";
 import FeridejaMob from "../assets/dea-Imeraj-mob.svg";
 
 import dea1 from "../assets/Dea Imeraj.jpg";
@@ -18,6 +18,7 @@ import azrendering from "../assets/azrendering.jpg";
 import arameras from "../assets/arameras.jpg";
 import remix from "../assets/remix.jpg";
 import solatium from "../assets/solatium.jpg";
+import solatiumGif from "../assets/sol/solatium-homepage.gif";
 // import downloadIcon from "../assets/download-arrow.svg";
 import tiaGif from "../assets/tia/terminal-perview.gif";
 import bookHero from "../assets/libri/home-libri.gif";
@@ -28,6 +29,22 @@ import remixGif from "../assets/remix/remix-hoover.gif";
 import portfolio from "../assets/portfolio.svg";
 
 export default function Home() {
+  useEffect(() => {
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("stickyy");
+      } else if (window.pageYOffset < sticky) {
+        navbar.classList.remove("stickyy");
+      }
+    }
+  }, []);
   let nameItem = useRef(null);
 
   useEffect(() => {
@@ -153,16 +170,25 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="menu md:grid md:grid-cols-6 text-[40px] md:text-[77px] items-center justify-center mt-[92px] md:mt-[58px] font-libre flex">
-            <div className="md:col-span-4 md:col-start-3 flex">
-              <div className="menu-span">
-                <span>work,</span>
+          <div className="menu md:grid md:grid-cols-6 text-[40px] md:text-[77px] items-center justify-center mt-[92px] md:mt-[58px] font-libre flex h-[131px]">
+            <div className="md:col-span-4 md:col-start-3 flex" id="navbar">
+              <div className="emri-menu">
+                <Image src={Ferideja} alt="Ferideja" />
               </div>
               <div className="menu-span ml-4">
-                <span>about,</span>
+                <Link href="#work">
+                  <span id="work">work,</span>
+                </Link>
               </div>
               <div className="menu-span ml-4">
-                <span>contact</span>
+                <Link href="#about">
+                  <span>about,</span>
+                </Link>
+              </div>
+              <div className="menu-span ml-4">
+                <Link href="#contact">
+                  <span>contact</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -457,22 +483,63 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="container md:mt-[205px] uppercase h-[333px] md:h-[463px] solatium">
-            <div className="grid md:grid-cols-3 h-full">
+          <div className="container md:mt-[92px] uppercase h-[333px] md:h-[463px] solatium">
+            <div className="grid md:grid-cols-3  h-full">
               <div className="md:flex-col flex justify-between md:ml-8 mb-4 text-right md:mr-8 w-full md:w-auto mobile-order-img">
-                <div className="text-[12px] md:text-[22px] md:order1 text-right mobile-order-text">
-                  <div className="date mb-4 md:mb-0">(2021)</div>
-                  <div className="job-desc leading-none">
-                    Brand Identity <br />
-                    Web Design
+                <div className="text-[12px] md:text-[22px] order1 text-right mobile-order-text">
+                  <div
+                    className="date mb-4 md:mb-0"
+                    onMouseEnter={imgEnter}
+                    onMouseLeave={imgLeave}
+                  >
+                    (2021)
+                  </div>
+                  <div
+                    className="job-desc leading-none"
+                    onMouseEnter={imgEnter}
+                    onMouseLeave={imgLeave}
+                  >
+                    <Link href="/party">
+                      <a>
+                        Brand Identity <br />
+                        Web Design
+                      </a>
+                    </Link>
                   </div>
                 </div>
-                <div className="pr-name text-[22px] md:text-[42px] leading-none font-libre">
-                  solatium
+                <div
+                  className="pr-name text-[22px] md:text-[42px] leading-none font-libre"
+                  onMouseEnter={imgEnter}
+                  onMouseLeave={imgLeave}
+                >
+                  <Link href="/party">
+                    <a>solatium</a>
+                  </Link>
                 </div>
               </div>
               <div className="md:col-span-2 h-[180px] relative">
-                <Image src={solatium} />
+                <div className="no-hover-image absolute top-0">
+                  <Link href="/party">
+                    <a>
+                      <Image
+                        src={solatium}
+                        onMouseEnter={imgEnter}
+                        onMouseLeave={imgLeave}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="hover-image absolute top-0">
+                  <Link href="/party">
+                    <a>
+                      <Image
+                        src={solatiumGif}
+                        onMouseEnter={imgEnter}
+                        onMouseLeave={imgLeave}
+                      />
+                    </a>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -534,7 +601,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="container grid md:grid-cols-2 mt-[50px] md:mt-44 font-ibmplex about">
+          <div
+            className="container grid md:grid-cols-2 mt-[50px] md:mt-44 font-ibmplex about"
+            id="about"
+          >
             <div className="experience md:w-[490px]">
               <h3 className="text-[50px] md:text-[77px] font-libre">
                 experience

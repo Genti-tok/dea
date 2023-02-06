@@ -33,6 +33,9 @@
   z-index: 1000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -80,7 +83,6 @@ a {
   }
 }
 main {
-
   .profile-image-size {
     span {
       img {
@@ -180,6 +182,9 @@ main {
       background-position: left center;
     }
   }
+  .proj-desc {
+    flex: 1;
+  }
 }
 
 .about {
@@ -213,3 +218,28 @@ footer {
 }
 
 // mix-blend-mode: multiply;
+
+
+.stickyy {
+  position: fixed;
+  top: 0;
+  margin-top: 0 !important;
+  z-index: 40;
+  width: 100%;
+  justify-content: center; 
+  height: 131px;
+  background-color: #000;
+}
+
+.emri-menu {
+  display: none;
+  img {
+    height: 100px !important;
+  }
+}
+
+.stickyy {
+  .emri-menu {
+    display: block;
+  }
+}

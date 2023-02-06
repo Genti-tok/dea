@@ -51,7 +51,7 @@ export default function Tia() {
                 <div className="container mt-[21px] md:mt-[147px]">
                     <div className="flex flex-wrap">
                         <div className="proj-desc text-[#EAEAEA] text-[12px] md:text-[18px]">
-                            <h2 className="text-[30px] md:text-[74px] font-libre">Private terminal <br /> & Exclusive Club</h2>
+                            <h2 className="text-[30px] md:text-[74px] font-libre uppercase">Private terminal <br /> & Exclusive Club</h2>
                             <div className="labels">
                                 <div className="flex mt-[50px]">
                                     <div className="w-[130px]"><p className="text-[#727070] uppercase">YEAR</p></div>
